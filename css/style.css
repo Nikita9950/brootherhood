@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*font-family: 'Open Sans', sans-serif;*/
+	
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../fonts/GOTHIC.eot');
+    src: url('../fonts/GOTHIC.eot') format('embedded-opentype'),
+         url('../fonts/GOTHIC.woff2') format('woff2'),
+         url('../fonts/GOTHIC.woff') format('woff'),
+         url('../fonts/GOTHIC.ttf') format('truetype'),
+         url('../fonts/GOTHIC.svg#GOTHIC') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothicBold';
+    src: url('../fonts/GOTHICB.eot');
+    src: url('../fonts/GOTHICB.eot') format('embedded-opentype'),
+         url('../fonts/GOTHICB.woff2') format('woff2'),
+         url('../fonts/GOTHICB.woff') format('woff'),
+         url('../fonts/GOTHICB.ttf') format('truetype'),
+         url('../fonts/GOTHICB.svg#GOTHICB') format('svg');
+         font-weight: 700;
+         font-style: normal;
+}
+
+		.bold{
+		font-family: 'CenturyGothicBold';
+		}
+
+
+
+
+	.fluid_header{
+		background: #060504;
+		 font-family: 'CenturyGothic';
+	}
+
+	.active_lang{
+		text-decoration: none;
+		color: white;
+		list-style: none;
+	}
+
+/*lang*/
+
+	.active_lang>li>a{
+		padding: 10px 15px;
+		margin: 0 5px;
+		color: #ffffff;
+		font-size: 16px;
+	}
+
+	.active_lang>li>a:hover{
+		color: #fcc721;
+	}
+
+
+/*basket*/
+
+	.basket_parent{
+		padding-top: 20px;
+	}
+
+	.basket_parent:hover a{
+		color: #ffffff;
+	}
+
+	.basket{
+		
+		padding: 20px 25px 20px 65px;
+		border: 2px solid #0d0d0c;
+		align-items: center;
+		position: relative;
+		font-size: 18px;
+		text-decoration: none;
+		color: #fcc721;
+	}
+
+	.basket:before{
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: #fcc721;
+		top: 50%;
+		left: 15px;
+		transform: translate(0, -50%);
+	}
+
+	.basket:after{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 16px;
+		height: 16px;
+		top: 50%;
+		left: 27px;
+		transform: translate(0, -50%);
+		background: url('../image/css_sprites.png') -20px -96px;
+	}
+
+/*nav*/
+	.my_nav{
+		font-size: 18px;
+		font-family: 'CenturyGothicBold';
+	}
+
+
+	.nav_header{
+		font-size: 18px;
+	}
+
+	.nav_header>li{
+		padding: 1px;
+	}
+
+	.nav_header>li>a{
+		padding: 15px 0;
+		background: #111111;
+		transition: 300ms;
+		color: #ffffff;
+	}
+
+	.nav_header>li>a:hover{
+		background: #fbc620;
+	}
+
+	/*.navbar-toggler-icon{
+		background-image: url(../image/burger.svg);
+	}
+*/
+
+
+
+/*active	*/
+
+	.active_header{
+		color: white;
+		list-style: none;
+		margin: 20px auto 0 auto;
+		font-size: 24px;
+		font-family: 'CenturyGothic';
+	}
+
+	.active_header>li{
+		padding:0 0 15px 20px;
+	}
+
+	.active_header>li>a{
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 15px 20px;
+		color: #3f8db9;
+	}
+
+	.active_header>li>a:hover{
+		outline: 2px solid #fbc620;
+		color: #fbc620;
+	}
+
+/*main*/
+
+
+	h2{
+		text-align: center;
+		font-family: 'CenturyGothicBold';
+		font-weight: 700;
+		position: relative;
+		border-bottom: 1px solid #111111;
+	}
+
+
+	/*section1*/
+
+	.section1{
+		background: #fbc620;
+		position: relative;
+		margin-top: -4px;
+	}
+
+	.section1:before{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: url(../image/background_section1.png);
+
+	}
+
+	.section1>.container{
+
+	}
+
+	.my_content_section_1>h2>p:first-child{
+		font-family: 'CenturyGothic';
+		font-size: 34px;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	.my_content_section_1>h2>p:last-child{
+		font-family: 'CenturyGothicBold';
+		font-size: 34px;
+		text-transform: uppercase;
+		line-height: 6px;
+	}	
+
+	.my_content_section_1>p{
+		font-family: 'Open Sans';
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+
+	.bold_open_sans{
+		font-weight: 700;
+	}
+
+	.my_ul{
+		list-style: none;
+		font-size: 16px;
+		font-family: 'Open Sans';
+		font-weight: 700;
+		line-height: 45px;
+	}
+
+	.my_ul>li{
+		padding-left: 50px;
+		position: relative;
+	}
+
+	.my_ul>li:before{
+		content: "";
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		transform: translate(0, -50%);
+		left: 0px;
+		width: 28px;
+		height: 28px;
+		border: 1px solid #ffffff;
+
+	}
+
+	.my_ul>li:after{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 36px;
+		height: 38px;
+		top: 0;
+		left: 0;
+		background: url('../image/css_sprites.png') -20px -20px;
+	}
+
+	.my_content_section_1>a{
+		font-family: 'CenturyGothic';
+		font-size: 15px;
+		color: #000000;
+		text-transform: uppercase;
+		border-bottom: 5px solid #ffffff;
+		position: relative;
+	}
+
+		.my_content_section_1>a:before{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 7px;
+		height: 17px;
+		right: -8px;
+		top: -7px;
+		transform: skew(45deg);
+		background-color: #ffffff;
+	}
+
+
+		.my_content_section_1>a:after{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 7px;
+		height: 17px;
+		right: -8px;
+		bottom: -5px;
+		transform: skew(-45deg);
+		background-color: #ffffff;
+	}
+
+
+	.my_border{
+		width: 220px;
+		height: 220px;
+		border: 5px solid #ffffff;
+		border-radius: 50%;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.circle{
+		z-index: 10;
+	}
+	
+
+	.circle:before{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 250px;
+		height: 250px;
+		border: 1px solid black;
+		border-radius: 50%;
+		top: -112px;
+		left: -15px;
+	}
+
+	.circle:after{
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 352px;
+		background-color: #111111;
+		top:-160px;
+		right: 115px;
+		z-index: -5;
+	}
+
+	.line:before{
+		content: "";
+		position: absolute;
+		width: 352px;
+		height: 1px;
+		background-color: #111111;
+		top: 340px;
+		right: 105px;
+	}
+
+	.line:after{
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 200px;
+		background-color: #ffffff;
+		top: 270px;
+		right: 360px;
+		transform: rotate(20deg);
+	}
+
+	.white_line:before{
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 150px;
+		background-color: #ffffff;
+		top: 243px;
+		right: 60px;
+		transform: rotate(-25deg);
+	}
+
+/*ul*/
+
+	.my_ul_style_2{
+		list-style: none;
+		top: 240px;
+		right: 1%;
+		z-index: 5;
+	}
+
+	.my_ul_style_2>li{
+		position: relative;
+		width: 37px;
+		height: 37px;
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px 0px;
+		background: #fbc620;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+
+	.my_ul_style_2>li:before{
+		content: "Замовити зворотнiй дзвiнок";
+		position: absolute;
+		color: #fbc620;
+		font-family: 'CenturyGothic';
+		font-size: 16px;
+		right: 15px;
+		top: 0px;
+		height: 37px;
+		background: #111111;
+		z-index: -5;
+		width: 0px;
+		overflow: hidden;
+		transition: 300ms ease;
+		padding: 0;
+	}
+
+	.my_ul_style_2>li:nth-child(2):before{
+		content: "Мiняємо Ваш e-mail на знижку або подарунок";
+	}
+
+	.my_ul_style_2>li:last-child:before{
+		content: "sales@brother-hood.com.ua";
+	}
+
+	.my_ul_style_2>li:hover.number:before{
+		width: 270px;
+		padding: 5px 0 0 20px;
+	}
+
+	.my_ul_style_2>li:hover.discount:before{
+		width: 430px;
+		padding: 5px 0 0 20px;
+	}
+
+	.my_ul_style_2>li:hover.e_mail:before{
+		width: 275px;
+		padding: 5px 0 0 20px;
+	}
+
+	.my_ul_style_2>li:hover{
+		background: #ffffff;
+	}
+
+	.my_ul_style_2>li>a{
+		position: absolute;
+		top: 50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		background: url('../image/css_sprites.png') -76px -96px;
+		width: 16px; height: 16px;
+	}
+
+
+
+	.my_ul_style_2>li:nth-child(2)>a{
+		background: url('../image/css_sprites.png') -20px -96px;
+	}
+
+	.my_ul_style_2>li:last-child>a{
+		 background: url('../image/css_sprites.png') -20px -150px;
+	}
+
+
+/*section2*/
+
+	.section2{
+		background: #000000;
+		position: relative;
+	}
+
+	.section2:before{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: url(../image/background_section2.png);
+	}
+
+	/*owl-carousel*/
+
+
+	.owl_slide_1{
+		color: #ffffff;
+	}
+
+	
+
+	.owl_slide_1>h2{
+		border-bottom: 1px solid #111111;
+	}
+
+	.owl_slide_1>h2:before{
+		content: "";
+		position: absolute;
+		width: 77px;
+		height: 5px;
+		top: 44px;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background-color: #111111;
+	}
+
+	.in_owl_1>p:first-child{
+		font-family: 'CenturyGothic';
+		font-size: 34px;
+		font-weight: 400;
+	}
+
+	.in_owl_1>p:first-child>span{
+		color: #fbc620;
+		font-weight: 700;
+	}
+
+	.in_owl_1>p:nth-child(2){
+		font-size: 18px;
+		font-family: 'Open Sans';
+	}
+
+	.in_owl_1>p:nth-child(3){
+		font-size: 18px;
+		font-family: 'Open Sans';
+	}
+
+	.in_owl_1>p:nth-child(3)>span{
+		color: #fbc620;
+	}
+
+	.in_owl_1>p:nth-child(4){
+		color: #fbc620;
+		font-family: 'CenturyGothic';
+		font-size: 20px;
+	}
+
+	.in_owl_1>a{
+		font-family: 'CenturyGothic';
+		font-size: 15px;
+		color: #fbc620;
+		text-transform: uppercase;
+		border-bottom: 5px solid #fbc620;
+		position: relative;
+	}
+
+		.in_owl_1>a:before{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 7px;
+		height: 17px;
+		right: -8px;
+		top: -7px;
+		transform: skew(45deg);
+		background-color: #fbc620;
+	}
+
+
+		.in_owl_1>a:after{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 7px;
+		height: 17px;
+		right: -8px;
+		bottom: -5px;
+		transform: skew(-45deg);
+		background-color: #fbc620;
+	}
+
+	.owl-nav{
+		font-size: 0;
+	}
+
+	.owl-prev{
+		font-size: 0;
+	}
+
+	.owl-prev:before{
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 50%;
+		transform: translate(0,-50%);
+		left: 0px;
+		border-top: 2px solid #222;
+		border-left: 2px solid #222;
+		transform: rotate(-45deg);
+	}
+
+	.owl-next{
+		font-size: 0;
+	}
+
+	.owl-next:before{
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 50%;
+		transform: translate(0,-50%);
+		right: 0px;
+		border-top: 2px solid #222;
+		border-right: 2px solid #222;
+		transform: rotate(45deg);
+	}
+
+/*section3,5*/
+
+	.section3_5{
+		background-color: #ffffff;
+	}
+
+	.section3_5 h2{
+		border-bottom: 1px solid #fbc620;
+	}
+
+	.section3_5 h2:before{
+		content: "";
+		position: absolute;
+		width: 77px;
+		height: 5px;
+		top: 44px;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background-color: #fbc620;
+	}
+
+	.in_section_3_5{
+		padding-top: 135px;
+		padding-bottom: 135px;
+
+	}
+
+	.section3_5 img{
+		display: inline-block;
+		border-radius: 50%;
+	}
+
+	.in_section_3_5>span{
+		z-index: 5;
+	}
+
+	.in_section_3_5>span:before{
+		content: "";
+		position: absolute;
+		width: 560px;
+		height: 560px;
+		border-radius: 50%;
+		border: 1px solid #fbc620;
+		top: -50px;
+		left: -35px;
+	}
+
+	.in_section_3_5>span:after{
+		content: "";
+		position: absolute;
+		width: 1180px;
+		height: 1px;
+		top: 230px;
+		left: -100px;
+		background-color: #fbc620;
+		z-index: -5;
+	}
+
+	.in_section_3_5>p{
+		padding-top: 170px;
+		font-size: 34px;
+		font-family: 'CenturyGothicBold';
+	}
+
+	.in_section_3_5>p:before{
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 675px;
+		top: -85px;
+		left: 338px;
+		background-color: #fbc620;
+	}
+
+	.in_section_3_5>div{
+		padding: 170px 0 0 100px;
+	}
+
+	.in_section_3_5>div>h3{
+		font-family: 'CenturyGothic';
+		font-size: 34px;
+		padding-bottom: 50px;
+	}
+
+	.in_section_3_5>div>h3>span{
+		font-family: 'CenturyGothicBold';
+		color: #fbc620;
+	}
+
+	.in_section_3_5>div>p{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		padding-left: 50px;
+		position: relative;
+	}
+
+
+	.in_section_3_5>div>p:before{
+		content: "";
+		position: absolute;
+		display: inline-block;
+		top: 25px;
+		transform: translate(0, -50%);
+		left: 0px;
+		width: 28px;
+		height: 28px;
+		border: 1px solid #fbc620;
+
+	}
+
+	.in_section_3_5>div>p:after{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 36px;
+		height: 38px;
+		top: 0;
+		left: 0;
+		background: url('../image/css_sprites.png') -20px -20px;
+	}
+
+
+	section:nth-child(4)>div>div>span:after{
+		content: "";
+		position: absolute;
+		width: 1180px;
+		height: 1px;
+		top: 230px;
+		left: -590px;
+		background-color: #fbc620;
+		z-index: -5;
+	}
+
+	section:nth-child(4)>div>div>p:before{
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 675px;
+		top: -85px;
+		left: -230px;
+		background-color: #fbc620;
+	}
+
+	section:nth-child(4)>div>div>p{
+		padding-left: 70px;
+	}
+
+	section:nth-child(4)>div>div>div{
+		padding: 170px 100px 0 0px;
+	}
+
+	.section_6{
+		background-color: #1e1e1e;
+		overflow: hidden;
+	}
+
+	.section_6 h2{
+		color: #ffffff;
+		font-family: 'CenturyGothicBold';
+	}
+
+	.section_6 img{
+		object-fit: none;
+		width: 1900px;
+	}
+
+	#map {
+  		width: 100%;
+ 		height: 550px;
+	}
+
+
+
+	@media screen and (max-width:1200px) {
+		.line:before{
+			display: none;
+		}
+		.line:after{
+			display: none;
+		}
+		.white_line:before{
+			display: none;
+		}
+
+		.in_section_3_5>span:before{
+			display: none;
+		}
+		.in_section_3_5>span:after{
+			display: none;
+		}
+		.in_section_3_5>p:before{
+			display: none;
+		}
+		section:nth-child(4)>div>div>div{
+			padding-right: 0;
+		}
+	}
+
+
+	@media screen and (max-width:768px){
+		.owl-prev:before, .owl-next:before{
+			display: none;
+		}
+	}
+
+	@media screen and (max-width:992px){
+
+		.in_section_3_5>div{
+			padding: 0;
+		}
+
+		.in_section_3_5{
+			padding: 0;
+		}
+		section:nth-child(4)>div>div>div{
+			padding: 0;
+		}
+	}
+
+	
+
+

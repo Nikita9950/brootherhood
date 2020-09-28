@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Century Gothic Bold';
+    src: url('fonts/GOTHICB.eot');
+    src: url('fonts/GOTHICB.eot') format('embedded-opentype'),
+         url('fonts/GOTHICB.woff2') format('woff2'),
+         url('fonts/GOTHICB.woff') format('woff'),
+         url('fonts/GOTHICB.ttf') format('truetype'),
+         url('fonts/GOTHICB.svg#GOTHICB') format('svg');
+         font-weight: 700;
+         font-style: normal;
+}
