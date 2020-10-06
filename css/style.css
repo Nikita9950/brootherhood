@@ -157,7 +157,7 @@
 		color: #3f8db9;
 	}
 
-	.active_header>li>a:hover{
+	.active_header>li>.active{
 		outline: 2px solid #fbc620;
 		color: #fbc620;
 	}
@@ -196,14 +196,15 @@
 
 	}
 
-	.my_content_section_1>h2>p:first-child{
+	.my_content_section_1>h2>span:first-child{
 		font-family: 'CenturyGothic';
 		font-size: 34px;
 		text-transform: uppercase;
 		color: #ffffff;
+		display: block;
 	}
 
-	.my_content_section_1>h2>p:last-child{
+	.my_content_section_1>h2>span:last-child{
 		font-family: 'CenturyGothicBold';
 		font-size: 34px;
 		text-transform: uppercase;
@@ -363,6 +364,56 @@
 
 /*ul*/
 
+	.symbol{
+		
+	}
+
+	.in_symbol{
+		position: fixed;
+		width: 450px;
+		height: 200px;
+		top: 240px;
+    	right: 2%;
+    	overflow: hidden; 
+	}
+
+	.in_symbol>p{
+		position: absolute;
+		background: #111111;
+		width: 270px;
+		height: 37px;
+		color: white;
+		right: -300px;
+		transition: 300ms ease all;
+		color: #fbc620;
+		font-size: 16px;
+		padding-left: 15px;
+		padding-top: 5px;
+	}
+
+	.in_symbol>p:nth-child(2){
+		position: absolute;
+		background: #111111;
+		width: 410px;
+		top: 47px;
+		color: white;
+		right: -500px;
+		color: #fbc620;
+		font-size: 16px;
+	}
+
+	.in_symbol>p:last-child{
+		position: absolute;
+		background: #111111;
+		width: 265px;
+		top: 95px;
+		color: white;
+		right: -300px;
+		color: #fbc620;
+		font-size: 16px;
+	}
+
+
 	.my_ul_style_2{
 		list-style: none;
 		top: 240px;
@@ -381,7 +432,7 @@
 		cursor: pointer;
 	}
 
-	.my_ul_style_2>li:before{
+/*	.my_ul_style_2>li:before{
 		content: "Замовити зворотнiй дзвiнок";
 		position: absolute;
 		color: #fbc620;
@@ -396,6 +447,7 @@
 		overflow: hidden;
 		transition: 300ms ease;
 		padding: 0;
+		opacity: 0;
 	}
 
 	.my_ul_style_2>li:nth-child(2):before{
@@ -404,22 +456,25 @@
 
 	.my_ul_style_2>li:last-child:before{
 		content: "sales@brother-hood.com.ua";
-	}
+	}*/
 
-	.my_ul_style_2>li:hover.number:before{
+/*	.my_ul_style_2>li:hover.number:before{
 		width: 270px;
 		padding: 5px 0 0 20px;
+		opacity: 1;
 	}
 
 	.my_ul_style_2>li:hover.discount:before{
 		width: 430px;
 		padding: 5px 0 0 20px;
+		opacity: 1;
 	}
 
 	.my_ul_style_2>li:hover.e_mail:before{
 		width: 275px;
 		padding: 5px 0 0 20px;
-	}
+		opacity: 1;
+	}*/
 
 	.my_ul_style_2>li:hover{
 		background: #ffffff;
@@ -738,7 +793,7 @@
 	section:nth-child(4)>div>div>div{
 		padding: 170px 100px 0 0px;
 	}
-
+/*section 6*/
 	.section_6{
 		background-color: #1e1e1e;
 		overflow: hidden;
