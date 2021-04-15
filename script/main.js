@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   $("#carousel_1").owlCarousel({
   	items: 1,
@@ -11,12 +12,25 @@ $(document).ready(function(){
   });
 });
 
-$(function() {
-    $("#navbarNav li a").click(function() {
-        $("#navbarNav li a").removeClass("active");         
-        $(this).toggleClass("active");
-    })
-});
+
+
+// $(function() {
+//     $("#navbarNav li a").click(function() {
+//         $("#navbarNav li a").removeClass("active");         
+//         $(this).toggleClass("active");
+//     })
+// });
+
+$(document).ready(function(){
+  $('.active_header>li>a').click(function(e){
+    e.preventDefault()
+    $('.active_header>li>a').removeClass('active')
+    $('.tabs__content').removeClass('tab_item-active')
+
+    $(this).addClass('active') 
+    $($(this).attr('href')).addClass('tab_item-active')
+  })
+})
 
 
 $(document).ready(function(){
@@ -432,10 +446,13 @@ function initMap() {
 
   	var donetsk = {lat: 48.013706, lng: 37.805966}
   	var marker = new google.maps.Marker({
-  	position: donectsk,
+  	position: donetsk,
   	map: map,
   	icon: {
 			url: "image/icon_map.png",
 		}
   	});
 }
+
+
+
