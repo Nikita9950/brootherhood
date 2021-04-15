@@ -14,13 +14,6 @@ $(document).ready(function(){
 
 
 
-// $(function() {
-//     $("#navbarNav li a").click(function() {
-//         $("#navbarNav li a").removeClass("active");         
-//         $(this).toggleClass("active");
-//     })
-// });
-
 $(document).ready(function(){
   $('.active_header>li>a').click(function(e){
     e.preventDefault()
